@@ -1,5 +1,15 @@
 import { QueryClient, QueryFunction } from "@tanstack/react-query";
 
+// Get the base API URL based on environment
+const getApiBaseUrl = () => {
+  // Check if we're in production (Netlify)
+  if (import.meta.env.PROD) {
+    return '/.netlify/functions/api';
+  }
+  // Otherwise we're in development
+  return '';
+};
+
 async function throwIfResNotOk(res: Response) {
   if (!res.ok) {
     const text = (await res.text()) || res.statusText;
@@ -12,7 +22,11 @@ export async function apiRequest(
   url: string,
   data?: unknown | undefined,
 ): Promise<Response> {
-  const res = await fetch(url, {
+  // Add the base API URL for production if needed
+  const baseUrl = getApiBaseUrl();
+  const fullUrl = url.startsWith('/api') ? `${baseUrl}${url}` : url;
+  
+  const res = await fetch(fullUrl, {
     method,
     headers: data ? { "Content-Type": "application/json" } : {},
     body: data ? JSON.stringify(data) : undefined,
@@ -29,7 +43,14 @@ export const getQueryFn: <T>(options: {
 }) => QueryFunction<T> =
   ({ on401: unauthorizedBehavior }) =>
   async ({ queryKey }) => {
-    const res = await fetch(queryKey[0] as string, {
+    // Get the path from the query key
+    const path = queryKey[0] as string;
+    
+    // Add the base API URL for production if needed
+    const baseUrl = getApiBaseUrl();
+    const fullUrl = path.startsWith('/api') ? `${baseUrl}${path}` : path;
+    
+    const res = await fetch(fullUrl, {
       credentials: "include",
     });
 

@@ -1,5 +1,5 @@
 // netlify/functions/api.js
-const { storage } = require('../../server/storage');
+const { storage } = require('./storage');
 
 exports.handler = async function(event, context) {
   const path = event.path.replace('/.netlify/functions/api', '');

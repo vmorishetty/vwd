@@ -1,0 +1,7 @@
+{
+  "name": "venture-wire-daily-functions",
+  "version": "1.0.0",
+  "description": "Netlify Functions for Venture Wire Daily",
+  "main": "api.js",
+  "dependencies": {}
+}

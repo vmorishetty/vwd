@@ -86,8 +86,8 @@ export class MemStorage implements IStorage {
       {
         title: "GeneSync: The Startup Decoding the Future of Genetics",
         slug: "genesync-the-startup-decoding-the-future-of-genetics",
-        excerpt: "Founded by Ronav Maldev and Shrihari Subramanian, GeneSync has made remarkable strides in genetic simulation, positioning itself as a key player in the intersection of biology and technology.",
-        content: `<p>In the ever-evolving landscape of biotech startups, few have captured the industry's imagination quite like GeneSync. Founded by Ronav Maldev and Shrihari Subramanian, the company has made remarkable strides in the field of genetic simulation, positioning itself as a key player in the intersection of biology and technology. With a recent valuation of $45 million, GeneSync is on a steady ascent, earning the attention of investors and scientists alike.</p>
+        excerpt: "Founded by Ronav Maldev and Harishankar Subramanian, GeneSync has made remarkable strides in genetic simulation, positioning itself as a key player in the intersection of biology and technology.",
+        content: `<p>In the ever-evolving landscape of biotech startups, few have captured the industry's imagination quite like GeneSync. Founded by Ronav Maldev and Harishankar Subramanian, the company has made remarkable strides in the field of genetic simulation, positioning itself as a key player in the intersection of biology and technology. With a recent valuation of $45 million, GeneSync is on a steady ascent, earning the attention of investors and scientists alike.</p>
         
         <h2>A Revolutionary Approach to Genetic Engineering</h2>
         <p>GeneSync's core innovation lies in its ability to codify gene sequences into a machine-readable format, enabling unprecedented levels of analysis, simulation, and manipulation. Unlike traditional bioinformatics tools, which primarily focus on sequencing and annotation, GeneSync takes it a step further by providing a robust API and SDK that allow researchers and developers to query specific genes, simulate genetic mutations, and predict potential functional outcomes.</p>

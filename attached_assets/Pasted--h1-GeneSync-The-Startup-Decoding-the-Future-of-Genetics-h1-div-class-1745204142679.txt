@@ -9,7 +9,7 @@
             <img src="https://via.placeholder.com/1200x600" alt="GeneSync Lab" class="article-image">
             
             <div class="article-body">
-                <p>In the ever-evolving landscape of biotech startups, few have captured the industry's imagination quite like GeneSync. Founded by Ronav Maldev and Shrihari Subramanian, the company has made remarkable strides in the field of genetic simulation, positioning itself as a key player in the intersection of biology and technology. With a recent valuation of $45 million, GeneSync is on a steady ascent, earning the attention of investors and scientists alike.</p>
+                <p>In the ever-evolving landscape of biotech startups, few have captured the industry's imagination quite like GeneSync. Founded by Ronav Maldev and Harishankar Subramanian, the company has made remarkable strides in the field of genetic simulation, positioning itself as a key player in the intersection of biology and technology. With a recent valuation of $45 million, GeneSync is on a steady ascent, earning the attention of investors and scientists alike.</p>
                 
                 <h2>A Revolutionary Approach to Genetic Engineering</h2>
                 <p>GeneSync’s core innovation lies in its ability to codify gene sequences into a machine-readable format, enabling unprecedented levels of analysis, simulation, and manipulation. Unlike traditional bioinformatics tools, which primarily focus on sequencing and annotation, GeneSync takes it a step further by providing a robust API and SDK that allow researchers and developers to query specific genes, simulate genetic mutations, and predict potential functional or behavioral outcomes.</p>
